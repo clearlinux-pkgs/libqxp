@@ -1,0 +1,1288 @@
+2017-12-31  David Tardon  <dtardon@redhat.com>  [1381edd899cac68950dc0b8421cbcef889573de3]
+
+	cid#216093 improve error checking in chain parser
+
+	Change-Id: I8428de670acac2c5fc24e224aebb341a5786e1cc
+
+2017-12-31  David Tardon  <dtardon@redhat.com>  [0648a481b358938694168de1f78778087508b7ea]
+
+	prepare for a release
+
+	Change-Id: I7d44e6a811c2ea211518290ed7a0c9f2d2c1eab1
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [fd3f5e9aa55bcbd63f88c00cabf5c3be2df201ac]
+
+	drop outdated MSVC project file skels
+
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [6296051cfa7a25fdde15b1a45fece9e82dea0426]
+
+	save some vertical space
+
+
+2017-10-02  David Tardon  <dtardon@redhat.com>  [bc9ad50bc8e168ba830db14d9cf0179823731bf3]
+
+	ofz#3226 avoid overflow causing big allocation
+
+	Change-Id: Ib2be6aa0ec2d17602373b478052b11c98b18f2b6
+
+2017-09-28  David Tardon  <dtardon@redhat.com>  [0eb2db818abe114a046a853eaf7f7ced77eab2f6]
+
+	avoid output from fuzzer
+
+	Change-Id: I73396c886d1d1fab614f3ae568778383984b12df
+
+2017-09-27  David Tardon  <dtardon@redhat.com>  [ac975cd20421b8a7ee152d9570f35bd8e89b2e26]
+
+	ofz#3378 ensure sane font size
+
+	Change-Id: I2119424965882046320391c28faf24d0957a401f
+
+2017-09-27  David Tardon  <dtardon@redhat.com>  [9fc70628b6f46cb868150c464b4e005d1694db4f]
+
+	ofz#3365 avoid null pointer dereference
+
+
+2017-09-27  David Tardon  <dtardon@redhat.com>  [7a6bd768aa7c934a0bb92f20afed5cae89ab0769]
+
+	ofz#3212 ensure that format always exists
+
+
+2017-09-27  David Tardon  <dtardon@redhat.com>  [03b97ec988bf31ba8dfba4359131a79ae61c75cb]
+
+	update autogen to install hooks automatically
+
+	Change-Id: Ic68fff2bf52dd833f4a6b2c91a66b249c36e47c2
+
+2017-09-27  David Tardon  <dtardon@redhat.com>  [6d8ce3dd480bc0363ab3ccadd7ed7d7786849801]
+
+	set up git-review
+
+
+2017-09-27  David Tardon  <dtardon@redhat.com>  [d7a1206a120e7bc180c98df711fc712ea92765f3]
+
+	add git hooks
+
+
+2017-09-12  David Tardon  <dtardon@redhat.com>  [c369f81acea232d205ccaa20ace5cb4ca6374445]
+
+	use for loop
+
+
+2017-09-12  David Tardon  <dtardon@redhat.com>  [586c526dc9ee36a7b1cd5c65a2d5415ef2442c39]
+
+	ofz#3355 check for cycles in groups
+
+
+2017-09-12  David Tardon  <dtardon@redhat.com>  [b61cb7e9bcb6f1281c0a0762d656bb2d466bb85b]
+
+	skip invalid group element indices
+
+
+2017-09-12  David Tardon  <dtardon@redhat.com>  [e274b1e2d6227cbbb6988c8fc81950347ad05e2d]
+
+	ofz#3359 avoid undefined shift
+
+
+2017-09-10  Miklos Vajna  <vmiklos@collabora.co.uk>  [1e81ef5d4acb550dfa283f63d5d39608fe11c5d2]
+
+	m4: MSVC defines __cplusplus as 199711L still
+
+	See e.g.
+	<https://stackoverflow.com/questions/37503029/cplusplus-is-equal-to-199711-in-msvc-does-it-support-c11>,
+	on MSVC we can't depend on the value of __cplusplus, since that one is a
+	too low value, even if everything else works fine.
+
+2017-09-10  David Tardon  <dtardon@redhat.com>  [031d75b159dc3d3391d0cf0dcb00bcbc7c79bd7d]
+
+	sanitize # of blocks
+
+
+2017-09-10  David Tardon  <dtardon@redhat.com>  [8cfee891ac0bc832fc493f839acb2eae72723640]
+
+	detect cycles in chains
+
+
+2017-09-10  David Tardon  <dtardon@redhat.com>  [a91a82e4e335e88b68e141331371765d19b00c3c]
+
+	ofz#3190 read as much of the block structure as possible
+
+
+2017-09-08  David Tardon  <dtardon@redhat.com>  [1273cd3767db1ef7efa6bd7656b928c12f237f04]
+
+	make librevenge-stream and -generators really optional
+
+
+2017-09-01  David Tardon  <dtardon@redhat.com>  [da2707e1807c6413c5a38615d335b1fbcf20ff7f]
+
+	reduce the amount of copypasta
+
+
+2017-09-01  David Tardon  <dtardon@redhat.com>  [959cccbf7f3091224d9696298483806ab77c8088]
+
+	fix new/delete mismatch
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [e09ed760ee6bfd994032197064fcae8eac0c3937]
+
+	cid#167066 untrusted loop bound
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [f0d487dd927bf717ca827335cb5266ba893f248f]
+
+	the number can never be negative
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [c7bcbc0310ae02580ea8b1ff07cabcb1548fec82]
+
+	check result of seek directly
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [9f8fc2ba628c8da471b951966241ca6def6c27ea]
+
+	cid#167076 untrusted loop bound
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [be8e80d2efdfdf7077badc33106fe7d920f704f1]
+
+	cid#167070 untrusted loop bound
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [bf5d1e5371f63a5b3802bcbfc8309c50f11d6002]
+
+	emplace_back does not make any sense here
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [c77211fcd4e652541532cd61223f4bdff03321f0]
+
+	cid#167069 untrusted loop bound
+
+
+2017-08-30  David Tardon  <dtardon@redhat.com>  [3f99c1c94df9859f02e30b78f7abb27e267ae923]
+
+	cid#167068 untrusted loop bound
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [d2402f84d2546cb2c82cfed86e1183d361de4c59]
+
+	cid#167067 sanitize tempate count
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [3b0ea4f9552419b6a0da84c84e1be4281f28747d]
+
+	sanitize record length
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [1e99a5cfc6411ac3317aabe1439d0866bd988b11]
+
+	just fail if length is too big
+
+	There is nothing to parse in that case anyway.
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [1c39f81bdb530fb1a6c996390ff8d5a9a3e49af5]
+
+	cid#167065 sanitize length
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [4459100084b73619518729ff3c76e9835fce86ea]
+
+	add a test for getRemainingLength
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [fd117f863d73c1c15c6801b8f1201ac167b64516]
+
+	getLength -> getRemainingLength
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [49827b3b535c1757d7b9f41a77539f83cd03d54f]
+
+	librevenge-stream headers are not needed
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [139dc3d8cecb3bf12a61411daf4623a83b5be33e]
+
+	cid#167077 improper use of negative value
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [ce06a8979b71534ba85667c21f3d7aacbb666e33]
+
+	cid#167074 operands don't affect result
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [cdd8b4f995be03d1ff348a041154092c2c386303]
+
+	cid#167072 operands don't affect result
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [d642b2773cddabb6e6ebc6ddc87e9a9ab36fa378]
+
+	cid#167071 operands don't affect result
+
+
+2017-08-29  David Tardon  <dtardon@redhat.com>  [1daf69b46bdb5aeec2e8b34ae33965bb8d961c5e]
+
+	cid#167064 operands don't affect result
+
+
+2017-08-28  David Tardon  <dtardon@redhat.com>  [1b6b8f1cc9cea273ddd64cfcb50e3287a4d98d9e]
+
+	assume modern-enough ICU is available
+
+	The separate .pc files already exist in 46.0, possibly even in older
+	versions.
+
+2017-08-28  David Tardon  <dtardon@redhat.com>  [41db6b9e3b9fc7b9b2fc830e66f1dc5e38048c4d]
+
+	check for the right ICU module
+
+
+2017-08-28  David Tardon  <dtardon@redhat.com>  [3d0b78eb855dc3797e614a72019afbebbebc536a]
+
+	WaE: narrowing conversion
+
+	error C2398: Element '3': conversion from 'unsigned __int64' to 'unsigned long' requires a narrowing conversion
+
+2017-08-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [5658a197de7dd7827e6cb2ba9acd8ed7934e9e83]
+
+	add missing includes
+
+
+2017-08-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [4118cfa23d2e251278a55f7fd44c246c84c41ab5]
+
+	don't use RVNGStringStream in the main lib
+
+	librevenge-stream is not used in libreoffice
+2017-08-27  David Tardon  <dtardon@redhat.com>  [fe901f2eae09a501472453c807057df9fd74b4ad]
+
+	bump version
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [f151069681f0af64ddc9dd8ffe0d9c7a413a0080]
+
+	update AUTHORS
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [11d923c3e4037fc12f761eeed728d51da6b880c0]
+
+	prepare for first release
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [7944a053449671f062a4a3d08e13edfe89a212f5]
+
+	add missing include
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [d882a7d1197a62db654c56814857433a76bdd7ff]
+
+	fix distribution of headers
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [5a7470dc9f183bff3c6464fbb1bf0461b94ae766]
+
+	keep the list lexicographically sorted
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [c471230bc4b82d6076c15de31d1e27103224c85f]
+
+	distribute all test files
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [f1aa5d35d0d9533078cbff58c19e0d8157c4e491]
+
+	fix test file name
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [c9cf6cad4cbbd04819f4ce583bba057118760aa5]
+
+	there is no BUILD_EXTRA_DIST
+
+
+2017-08-27  David Tardon  <dtardon@redhat.com>  [acd65124e800df0e046ba7f991ed5a1b4d478fd3]
+
+	parse 1.0 pages & objects
+
+
+2017-08-26  David Tardon  <dtardon@redhat.com>  [9cde0d8c61f60e66048c828867aaba231f4f166a]
+
+	drop extraneous load call
+
+
+2017-08-26  David Tardon  <dtardon@redhat.com>  [8afc237eb3add66810ae441e365a887f5c4191b9]
+
+	fix parsing of 1.0 chains
+
+
+2017-08-26  David Tardon  <dtardon@redhat.com>  [16fc790c030ab75ffe1c21574d0153d1396bc426]
+
+	parse 1.0 pages
+
+
+2017-08-26  David Tardon  <dtardon@redhat.com>  [9ab001b967a4fb5cc22f21966367675f8bbf5a1d]
+
+	drop unused variable
+
+
+2017-08-26  David Tardon  <dtardon@redhat.com>  [bcabff9d5c8f8a1b37b97f86aa020848efa5aa5f]
+
+	reverse condition
+
+
+2017-08-26  David Tardon  <dtardon@redhat.com>  [05393385381f06e7449b0b1520148eec985bd4ab]
+
+	WaE: non-virtual dtor
+
+
+2017-08-25  David Tardon  <dtardon@redhat.com>  [6ece88b15a28c7f76b4e79dae0ba200032b866e0]
+
+	prepare support for the book format
+
+
+2017-08-25  David Tardon  <dtardon@redhat.com>  [b14d9b0248080abbfe5721a6db04add926c9cd9a]
+
+	fix parsing of 4.0 pages
+
+
+2017-08-25  David Tardon  <dtardon@redhat.com>  [1c3bc1a2addb30b77d66795d978fa9cf29217571]
+
+	fix parsing of 3.3 pages
+
+
+2017-08-25  David Tardon  <dtardon@redhat.com>  [ebb7ae431e48c3fd0aab7e5ae3a56962552a15ac]
+
+	test must be linked with icu too
+
+
+2017-08-24  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [b3993400f5435561899e98de590cec16c0077412]
+
+	handle charsets
+
+
+2017-08-23  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [dc4aff69f64ed126a1e152e637d6e27b01429d28]
+
+	mark override
+
+
+2017-08-23  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [46c2beb3995bc05a0e9fadaf7fe822489b00f7d1]
+
+	skip control char spans
+
+
+2017-08-23  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [34ba30eff03a57191453c08ab8a2b2c949dcbf27]
+
+	add deps to readme
+
+
+2017-08-23  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [8fb9889957bcc3b4cf70310b38432f2d246be8a8]
+
+	add ICU lib
+
+
+2017-08-23  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a7b034da844c021cc42612dc7e220e24f2870bb6]
+
+	output paragraph rules
+
+
+2017-08-22  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bd131284397711487c7550993548e102eca22dde]
+
+	parse paragraph rules
+
+
+2017-08-22  David Tardon  <dtardon@redhat.com>  [049cd04b3dbb82e4e251b2dbe4629a73dc7f5c50]
+
+	simplify expressions
+
+
+2017-08-22  David Tardon  <dtardon@redhat.com>  [f0c78f784ef4eb54d4464afbe99f0a3097b35b79]
+
+	use verb to name a function
+
+
+2017-08-22  David Tardon  <dtardon@redhat.com>  [ffe233ddb343a2c6a17d2de9771f3317e3af1ec0]
+
+	sort lexicographically
+
+
+2017-08-22  David Tardon  <dtardon@redhat.com>  [ce07e34a24ce2a4b0e16c195e116813407dd7bce]
+
+	parse 3.1 docs
+
+
+2017-08-21  David Tardon  <dtardon@redhat.com>  [8140c20fb94efeb7fbd80c8a64be632e7ff956aa]
+
+	put each entry to a separate line
+
+
+2017-08-21  David Tardon  <dtardon@redhat.com>  [cfd171b31e95661e9b118866c34e40d2633c0d4d]
+
+	add tool for conversion to plain text
+
+
+2017-08-21  David Tardon  <dtardon@redhat.com>  [6cc51faeefcc730ee49bee4dff642d55a26f59d0]
+
+	return a value
+
+
+2017-08-21  David Tardon  <dtardon@redhat.com>  [0610b172418e5293b514f019e23c09979b001e7a]
+
+	clean up public API
+
+
+2017-08-21  David Tardon  <dtardon@redhat.com>  [aebecdd0a8b9d85fc45b523e80777b7a9e1b50c0]
+
+	fix a brain fart
+
+
+2017-08-21  David Tardon  <dtardon@redhat.com>  [dfa3bb7d3a024eeeb481a656471eb709a925e77b]
+
+	ignore control chars when determining max font size
+
+
+2017-08-20  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [dd1c31ecbaa81ea72bec48bfff93f33f1dbd959b]
+
+	output auto leading and incremental leading
+
+
+2017-08-20  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f24227e13d8e78aa50b902d1cef7413d7c47b25b]
+
+	refactor maxFontSize
+
+
+2017-08-20  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [7277ca063cce64037aee3cd51ce5919ad2ed1f90]
+
+	parse auto leading
+
+
+2017-08-20  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [15830656d19784dcfeb4d23a3b6264c8456aa5d9]
+
+	output absolute leading
+
+
+2017-08-19  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f60fa4b75c2ee5074abdce71e0f37f12daaa3ba6]
+
+	parse paragraph leading flag
+
+
+2017-08-18  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [4638adfd16e0c3cc41c8e19f9ca295a91f7419b2]
+
+	mark override
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [b06c7e1f8a6e4a891689d67661491f52457b2456]
+
+	parse H&J
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [4f8fc421acf55e760e57107cbff701a8cd034b3d]
+
+	approximate superior positioning
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [0a84bfda23cf9af81f99891a7a89318e614b1c09]
+
+	scale sub-/superscript horizontally too
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [f67f94703e43ae7679f28e61f133c01b83caf609]
+
+	emit more under/strike-line props
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [3510d12c95f8ad19f298f119151f57d373ab8746]
+
+	parse 1.0 para formats
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [397c095414e66c77aa1ba52a653956b595b85ba0]
+
+	parse baseline shift
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [f2cfe0956659bc86328ea2e4893d3da9f3a9f2f3]
+
+	parse 3.3 sub/superscript settings
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [8030a11c23cdccaa18656cd06752f4ff7c5936eb]
+
+	parse 4.0 sub/superscript settings
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [ca6449c15e5f75927c149238b0cb4fef343ca949]
+
+	prepare for parsing doc props
+
+
+2017-08-18  David Tardon  <dtardon@redhat.com>  [9bade6716ba022a360ede323d72ad9050a2412c2]
+
+	use sub/superscript settings from doc props
+
+
+2017-08-18  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [ec63b69c197f4fc60988c4ee08bba4b660c2290a]
+
+	handle 3.3 text file info blocks
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [ded7cccaa222b622547b05957f0261b551ffcdd8]
+
+	parse 1.x char formats
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [2d800c475b4c96114ff1ccc98297477619e7d943]
+
+	read v.1 header
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [60599d47abc056fdc3a91ca7ad1c47ed951c84a2]
+
+	use unsigned to keep version
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [679a6d694b515fc8b7a9ad9519894279c6ce7f0e]
+
+	detect v.1 files
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [8be3c5b74f6c56b88993d59d8e2405ae6d6e9676]
+
+	parse compressed mac files
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [46e562404bb526bd5c18dec9d1e55949ec97e1a6]
+
+	remove unnecessary includes
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [dfdf9bf9a3aabbbee633fdbad515dc8b64a85d29]
+
+	reserve space
+
+
+2017-08-17  David Tardon  <dtardon@redhat.com>  [7507f7c1942c41710a2d62e4285d6023b370dcc9]
+
+	refactor format detection
+
+
+2017-08-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [538847a699fe6a4b78a0b9dd272855c116d811fc]
+
+	handle 4.0 text file info blocks
+
+
+2017-08-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [ea319915c197caf5df80974aa44c83ccdfaaa4ab]
+
+	reduce 4.0 text objects parsing copypasta
+
+
+2017-08-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [0cd829dbdc7f61c95ab0f4929775fc3bb984fa88]
+
+	fix 4.0 flags
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [2dbfbac86068ba1ee07d691bade544e922ce1ff6]
+
+	emit more text props
+
+
+2017-08-11  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [23f019c7527677fc134944b82d0d87189b847f3a]
+
+	quick fix text path rotation
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [6774730a72bf0dd684f36202ad09edf8a4c6e1f1]
+
+	fix modelines
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [13bd11269bf84d5f5e72bc691856e9688e576e1a]
+
+	really fix fuzzer
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [b03d222daf14e234b0b64e1a055df45f1efb0f83]
+
+	rename --with-tools to --enable-tools
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [de0c0aa4175d7b8a5150036eb179bad05fa868b1]
+
+	fix fuzzer
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [1369363a5727dd2fb77720b55d1446618a0cb67b]
+
+	fix format detection in conv. tools
+
+
+2017-08-11  David Tardon  <dtardon@redhat.com>  [2b363a106386be93bbd2f0131561014166923aa4]
+
+	suppress gcc 7 fallthrough warnings
+
+
+2017-08-10  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bf3a52ab5200d860ebf12263dd92d08f64f4d92e]
+
+	output bezier lines, boxes
+
+
+2017-08-10  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e224edda2b8452d208f975c90f9f103a8fa2bdd2]
+
+	compare points using almost_zero
+
+
+2017-08-10  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e2a65a235d701dd4f5f380763848e514d342ec84]
+
+	parse control chars span flag
+
+
+2017-08-09  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [073b4518bc3b27487b113d7fc994a2e18ea3ca4b]
+
+	parse 3.3 tab stops
+
+
+2017-08-09  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a7f5cbe786e1a4a0e4f1ba922ad9b9bd69dee879]
+
+	output tab stops
+
+
+2017-08-09  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d5b833b7928ec40339fc588b18d87ffd2dd6a9af]
+
+	parse 3.3 runaround flag
+
+
+2017-08-09  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [55197d1cc969c40cee0c50e325fc7517967c22c1]
+
+	add basic runaround handling
+
+
+2017-08-08  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [c3451c50b67063c86ae5f1dd82d5d20adb129a3a]
+
+	parse 3.3 dashes
+
+
+2017-08-08  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e6cdc9893bff7ef66e2ea4bba5b06c7f1bf7da72]
+
+	parse and output 4.0 dashes
+
+
+2017-08-08  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [ee56ded54a23e17532c12d2356e13495f4ced04c]
+
+	parse 4.0 arrow index
+
+
+2017-08-07  David Tardon  <dtardon@redhat.com>  [e72bf60b5dbb996d702d8db062f543d3cc07dbcb]
+
+	handle various ways used to transfer full Mac files
+
+
+2017-08-07  David Tardon  <dtardon@redhat.com>  [8e82713090d251052b1d3b6162da2c164c90e370]
+
+	add skel. v.1 parser
+
+
+2017-08-07  David Tardon  <dtardon@redhat.com>  [1c427f4a20002acaabec58371d8486bbcd6f0273]
+
+	sort lexicographically
+
+
+2017-08-07  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [ef009a1be6138af60ed66da34f2c204e1f315c6f]
+
+	parse 4.0 arrows
+
+
+2017-08-07  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [41aad9c03dd299410395ed633c9970ff05a1110a]
+
+	parse and output 3.3 arrows
+
+
+2017-08-07  David Tardon  <dtardon@redhat.com>  [ee32769fd95224ae4ef5580dbe746c379d4c7100]
+
+	add missing include for std::fabs
+
+
+2017-08-07  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e39bc03b87e0806c8a27a9b076cff36892ba4a68]
+
+	remove line style code duplication
+
+
+2017-08-06  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [cc63f413acb7e16d378a4d2c89adae2d19fcf92a]
+
+	parse bezier lines, boxes
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [991bae6ddfb12bbd0a851d773e9bb8e8f12de6a6]
+
+	fix zero-width frame
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bae165bf1638322366b83ed8a5e2156bef0ee0e4]
+
+	clean up object creation
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d1d5f897974791a51d255e1e5a0e4d7b1882a0ff]
+
+	check input
+
+
+2017-08-05  David Tardon  <dtardon@redhat.com>  [eb00c1801249924e29a78d23788e1d1bd3dd4414]
+
+	check for all used boost headers
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [0f8727f1b851461c07426b7a46b1f42e36e8d44d]
+
+	fix insertText spaces
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d42cfd22ba79d5fe0a4a07518bc6a81e2f4c6770]
+
+	output line text
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [28da5ff3a1eb5eaa606e47e5256de0d1e4c79de1]
+
+	fix 4.0 linked text settings parsing
+
+
+2017-08-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [197dc2ca6f5e8d93546a23e267e87af03d2e8594]
+
+	fix font type
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bb81bf804ff8d4a95c0024230a685e2069b502fa]
+
+	parse line text
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [c42d00cd6fc810b0a8422baeb76c77a8137781db]
+
+	refactor text boxes handling
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [402f48af23fb1a08f8d3cb3097621b2a96e1658f]
+
+	output hairline
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [fdab23a216f7dea1297fe2f10ebbb389a5eecb9b]
+
+	fix warning
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d2135c476fb3aeb82ac9dc9d3e0917080312cffc]
+
+	refactor linked text settings
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [c4f557c696e3c91a3f83582d80aa4a478b8aa264]
+
+	parse 4.0 picture box
+
+
+2017-08-04  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [aea5f4bf198b78d28792fe2bc36fcdbd8062a2bb]
+
+	parse 4.0 textbox
+
+
+2017-08-03  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [42b7a8f53ef3b30269b55b1c52c7d09319e868da]
+
+	parse 4.0 box
+
+
+2017-08-03  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [eba664dc3142ff704d937e3e81447ddd43a92932]
+
+	fix 3.3 groups parsing
+
+
+2017-08-03  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [487b1379008c529537ba7a9a35209f501b033b51]
+
+	parse 4.0 groups
+
+
+2017-08-03  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d8d5b95efd96c9d3907791632c48bbc3fad59ca5]
+
+	parse 4.0 lines
+
+
+2017-08-03  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f60fe08adb735d7dd12a6c4e41ef80c0ae43ba6f]
+
+	dispatch distinct 4.0 objects parsing
+
+
+2017-08-02  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a6a0237726106b3682aafdd563a4ea3a57c4a842]
+
+	start parsing 4.0 objects
+
+
+2017-08-02  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [1e5622b414e51a8e45f81f2efce99d4d75839f3f]
+
+	parse 3.3 flip, corner type
+
+
+2017-08-02  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [de2835d9823af539506913b392ac21b374d4fea6]
+
+	parse no color flag
+
+
+2017-08-01  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [fd284d79975f4037297db371a87a67388a6d9ec2]
+
+	output linked texts
+
+
+2017-08-01  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [520e0f831bee47c42701a52d2939d65420625679]
+
+	fix next linked index size
+
+
+2017-08-01  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e9bcf59e9cf8dc6f0ccdd8b652c1605b6b777212]
+
+	improve textbox padding
+
+
+2017-07-31  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [b8598ae9aed8c5f8a179a40663205207292a1b8c]
+
+	fix type
+
+
+2017-07-31  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [52cde8e81e349ea3bf4ffcdf21f279de73300650]
+
+	parse polygon data in all boxes
+
+
+2017-07-31  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [6ddceee539c28b9ee4b7eefb106735a2722cd373]
+
+	fix output of facing pages
+
+
+2017-07-31  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a5f11859434cd09b6dccbdd433518d1914a7b6a8]
+
+	improve parsing of pages
+
+
+2017-07-31  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [58116a0f22f0520e22a3d4231da60e0caed54891]
+
+	parse and output 3.3 polygons
+
+
+2017-07-31  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bfa8f7deceb7ae5357fe214fc9321efa470ea050]
+
+	fix int type
+
+
+2017-07-30  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [840aa7ebbab370dbcd483c12c2ae5713f9e533c0]
+
+	parse 3.3 picture box
+
+
+2017-07-30  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [eadd0876f655af6b599c9671b342817a75e7e1fa]
+
+	output oval
+
+
+2017-07-29  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [7e61a0f03a650a0935f13198b1f4538a22102fa3]
+
+	output text
+
+
+2017-07-29  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [66b4be6caa14ea9fac2bd93b12fdef01c6f57d42]
+
+	fix int type
+
+
+2017-07-29  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [8f1bc62b7b8fa721ebb46788051a84625abe809b]
+
+	clean up code
+
+
+2017-07-28  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [45bc30164d1f249929d3e56c4660c692b227b081]
+
+	write z-index
+
+
+2017-07-28  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [0f045cc09267ea3b775b661cd47f8fbd57ce1ab6]
+
+	output groups
+
+
+2017-07-28  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e1e4fc36de5c9f709473cd94a4355bc52ab316a1]
+
+	output lines
+
+
+2017-07-28  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [ddeca151819b732ecb2afd0d6fbe92053c656dee]
+
+	store text as std::string
+
+
+2017-07-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [393a69de8890e9d5da5caf11e75a8c9c76b43837]
+
+	draw frame inside bbox
+
+
+2017-07-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [09e23a270e9826d0015e3377e2293989d377fa93]
+
+	don't draw frame when width is 0
+
+	looks like that is how QuarkXPress works, it displays some kind of frame, but doesn't print it
+2017-07-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [b1a6faff4335113f15e4e8354b8043fba6029af1]
+
+	fix gradient size
+
+
+2017-07-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d7b3779ea03bdcb072646b78c6df6f0fd7379e8e]
+
+	rotate box
+
+
+2017-07-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [20d3d2ac3b8217b656e64cce35d07ee903015901]
+
+	output gradient
+
+
+2017-07-27  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [78fb947093c4027ec28dfee6566052d1b42d9fcb]
+
+	parse 3.3 empty boxes
+
+
+2017-07-26  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d7a307bbeb26ba7e36789282d283ad6d490605d7]
+
+	output empty boxes
+
+
+2017-07-26  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [0ec6dfc1ac91d9fe0cb288028d16b8e92a528eeb]
+
+	remove unreachable return
+
+
+2017-07-26  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [78157dd73b23cc4b048154bfe4f6316082571f5e]
+
+	check null type
+
+
+2017-07-26  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [1a7f7da7beab73e49976837224e8e91683d4e33f]
+
+	fix qxp2svg result check
+
+
+2017-07-26  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d25e5188bf767d485883ae127fb39c1fa4b27573]
+
+	finish collector output skeleton
+
+
+2017-07-25  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f9c68322abcfc9f5cab8aba1076da14d46b004b1]
+
+	use pointers to avoid unnecesary copying
+
+
+2017-07-25  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [2db64c24d6b18932cc4ddfac96f8e42ceab9fe27]
+
+	parse 3.3 textboxes
+
+
+2017-07-25  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [8764fe3c8b6e6ed2e6c41417117148f14ac4b37f]
+
+	fix function name
+
+
+2017-07-24  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [358b860a464470a7f5d5ac6a14d2c2d87e26167c]
+
+	parse text
+
+
+2017-07-23  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [1f216883082ebedace054254a907afa9babb5e67]
+
+	start processing pages, groups
+
+
+2017-07-22  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [9d31e589fa21c6fad2b42fd282fb3a0816e69cb1]
+
+	parse groups
+
+
+2017-07-22  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [85283e15b57067f34e337ca943210b477e6d7428]
+
+	parse gradient
+
+
+2017-07-22  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [ca8b5e2d49c6347e05ae5115b0b4c8d2177b84a2]
+
+	add line rotation
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [fb5c3d45b14cefceaccf1c633c9aae25b558cca2]
+
+	dispatch distinct 3.3 objects parsing
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [30de58bcd3af5be9311a1d577a07aa990891ece7]
+
+	fix typo
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bad2b8364cf5babc7db01010c8ef86c36e417a13]
+
+	apply shade
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a8d042bb9b3aba2d642c158b71454507be471861]
+
+	read line width, skip to end
+
+
+2017-07-21  David Tardon  <dtardon@redhat.com>  [9575ff22fa62332b58547a46153a94afdce0e067]
+
+	simplify this a bit
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [890765a984dda3767d8e08bd60bcd370ecefd209]
+
+	switch to 1-pass
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e14d8e7a99e17975fc75884ec12656a5bf32a859]
+
+	start parsing 3.3 objects
+
+
+2017-07-21  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [aaf7042868d13c72f88e0a3b6b15aba08bd89f99]
+
+	refactor color + shade
+
+
+2017-07-19  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f33dedbd65ccb5c9d9cefab000ac499babd64412]
+
+	parse pages
+
+
+2017-07-19  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [7d9af9a3fcb51abbbe5bbb559afdf0f0732a532e]
+
+	ignore first pass errors
+
+
+2017-07-19  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [b6c811afc798b498d2977f3d2545078a9a763655]
+
+	clean up deobfuscator
+
+
+2017-07-19  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e0ac039e23f3f58fb998038694ba8cf7b9424892]
+
+	add explicit, remove unneeded destructor
+
+
+2017-07-18  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [5287cc3b8199542237b1bb234757155d133e7c6a]
+
+	deobfuscate 4.0
+
+
+2017-07-18  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [1637be9d1857b90334a35a61ad38ebc8ce77734f]
+
+	test seed overflow
+
+
+2017-07-18  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [2547d2fca448420608d914020aec59da71e24c1e]
+
+	deobfuscate 3.3
+
+
+2017-07-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [d5a99c55566331260f876979363f19d864f2a327]
+
+	save position instead of creating new stream
+
+
+2017-07-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bf50323b1ca9756575ad7bf8c599cd4c6b7e2b65]
+
+	rename and refactor collectors
+
+
+2017-07-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [7ec8a4fca51e7253a70b202fbeb4605d742323f7]
+
+	optimize getColor/Font
+
+
+2017-07-17  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [bb0996863ad8bdd9c1206fb197b898abdd576ded]
+
+	add dummy collector
+
+
+2017-07-16  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [04ae67eba5a69261f027113ab9c2d7498077a097]
+
+	parse 3.3 paragraph format
+
+
+2017-07-16  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a33c5da68d04b792eefa265929f4574446daa986]
+
+	read pages stream
+
+
+2017-07-16  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a72da6df78e7683faf0fba51870de2b2fae8ac34]
+
+	fix getLength usage
+
+
+2017-07-16  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [91e55f30dd8d73daaf85ff70158aaeb0ba35994e]
+
+	reduce code duplication
+
+
+2017-07-16  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [0506ccabeef7af11e218a5820fdd68154a410587]
+
+	parse 4.0 paragraph format
+
+
+2017-07-15  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f3761a07e4636d5824fc0e7a99e68768fd938682]
+
+	parse 4.0 tab stops
+
+
+2017-07-14  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [f10e08abfcaed999924894e4af56f8e327d4b2e5]
+
+	parse 4.0 char format
+
+
+2017-07-14  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [25bf8b9353e5c7ffea0e19cc8807d9c7d0567a2c]
+
+	simplify parseCollection
+
+
+2017-07-14  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [de04f82309731b3f589fbf64ef07efbafdafda39]
+
+	parse 3.3 char format
+
+
+2017-07-13  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [3d6e3480a902160867d9df4abcab289c3454e6bb]
+
+	don't use auto for numbers
+
+
+2017-07-13  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a1a5aed97f4cf4f73597e7f1889a4b446a11886f]
+
+	improve safety and performance of 4.0 colors parsing
+
+
+2017-07-13  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [14991e4b4d9ae2f2fce749b56ac9698bf9bc9378]
+
+	add type to api
+
+
+2017-07-13  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [3fdefef77bb7f07bc5ca74fdc676fa3ba545be2c]
+
+	parse 4.0 colors
+
+
+2017-07-12  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [36f1b22bf8683be0ae7d43a8672e6bc7e32b29dc]
+
+	don't cast number to enum
+
+
+2017-07-12  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [37459b3ae16f812e6b6929dcca2f3d039e8da824]
+
+	don't use auto for numbers
+
+
+2017-07-12  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [997d1798a6bb358c97b8486e343c9cb1541e967e]
+
+	fix for-loop type mismatch
+
+
+2017-07-12  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [a4c4b32f935ad826a8f08d5f19eca40a3371f829]
+
+	parse 3.3 colors
+
+
+2017-07-12  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [7e5fcbfe831a36651b18e57364aad2a0643a6a2c]
+
+	parse fonts
+
+
+2017-07-12  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [c9a40a9ce627a357a13601d584e7e43a2fd01e3a]
+
+	fix BE doc version detection
+
+
+2017-07-11  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [db8fc25c3d335f8d699b7905980160ea8aefe736]
+
+	use skip instead of seekRelative
+
+
+2017-07-11  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [9919998e9077fe630e4cb9c3a301440837b49144]
+
+	skip unneeded records
+
+
+2017-07-11  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [0418f0fbd5aba21f2d81461d3d602d28a4a01b63]
+
+	refactor parsers
+
+
+2017-07-11  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [648c732ba52c2f70bf14a18170216af701b85193]
+
+	parse blocks, chains
+
+
+2017-07-11  David Tardon  <dtardon@redhat.com>  [31b2c43049e1e84e39ebbb2af0f383cee0fc6258]
+
+	simplify dist. and inst. of headers
+
+
+2017-07-11  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [eaf29b34da17931b1407bb7df1ebb0aa6e489f8c]
+
+	add readString
+
+
+2017-07-10  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [444bb55dde9be8b5b82b8775bce83ef03adedc5f]
+
+	add isBigEndian for convenience
+
+
+2017-07-07  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [e3b1f4f216f76026eac689b4d37e8c949970b526]
+
+	add some types
+
+
+2017-07-07  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [098cdba0d3735837047e2cb52ac46a3ba9295d40]
+
+	add collector
+
+
+2017-07-06  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [eb7dc1c41bcb298755de93635e80a1d3fbda12ad]
+
+	call parser
+
+
+2017-07-06  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [5c2d7643a4833860ddc173a3eba7b1bb6a69b998]
+
+	remove unneeded stuff
+
+
+2017-07-06  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [34ea5b57e2b8b940caead0ab9637bce929527d38]
+
+	add parser skeleton
+
+
+2017-07-06  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [9513165ae258191edcf07f60aca7ccc92d1ab9c7]
+
+	parse 3.3, 4.0 headers
+
+
+2017-07-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [977944a82d3aac9ad94772ba761dbe36baabcca0]
+
+	fix header guard
+
+
+2017-07-05  Aleksas Pantechovskis  <alex.pantec@gmail.com>  [b50007ae322a3e4e2720096a686fe79979abd601]
+
+	add format detection test
+
+
+2017-07-05  Alex P  <alex.pantec@gmail.com>  [7d78a65246320afdc86a5186427501d50d465dde]
+
+	astyle
+
+
+2017-07-05  Alex P  <alex.pantec@gmail.com>  [6917e530eed08fd3389ea5cda40cdb7393b61709]
+
+	add format detection
+
+
+2017-06-08  David Tardon  <dtardon@redhat.com>  [ea44bdffa477c8490d555d98201071316f4df2fa]
+
+	initialize project
+

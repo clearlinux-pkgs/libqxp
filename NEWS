@@ -1,0 +1,11 @@
+libqxp-0.0.1
+
+- Fix build with MSVC.
+- Fix various issues found by Coverity and oss-fuzz.
+- Make build dependencies librevenge-stream and librevenge-generators
+  optional. They are only needed for tests and conversion tools.
+
+libqxp-0.0.0
+
+- First release.
+- Support for versions 3.1-4.1.
