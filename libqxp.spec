@@ -4,15 +4,15 @@
 #
 Name     : libqxp
 Version  : 0.0.1
-Release  : 1
+Release  : 2
 URL      : https://dev-www.libreoffice.org/src/libqxp-0.0.1.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libqxp-0.0.1.tar.xz
 Summary  : No summary provided
 Group    : Development/Tools
 License  : MPL-2.0-no-copyleft-exception
-Requires: libqxp-bin
-Requires: libqxp-lib
-Requires: libqxp-license
+Requires: libqxp-bin = %{version}-%{release}
+Requires: libqxp-lib = %{version}-%{release}
+Requires: libqxp-license = %{version}-%{release}
 BuildRequires : boost-dev
 BuildRequires : doxygen
 BuildRequires : pkgconfig(cppunit)
@@ -28,7 +28,7 @@ QuarkXPress file format. It supports versions 3.1-4.1 currently.
 %package bin
 Summary: bin components for the libqxp package.
 Group: Binaries
-Requires: libqxp-license
+Requires: libqxp-license = %{version}-%{release}
 
 %description bin
 bin components for the libqxp package.
@@ -37,9 +37,9 @@ bin components for the libqxp package.
 %package dev
 Summary: dev components for the libqxp package.
 Group: Development
-Requires: libqxp-lib
-Requires: libqxp-bin
-Provides: libqxp-devel
+Requires: libqxp-lib = %{version}-%{release}
+Requires: libqxp-bin = %{version}-%{release}
+Provides: libqxp-devel = %{version}-%{release}
 
 %description dev
 dev components for the libqxp package.
@@ -56,7 +56,7 @@ doc components for the libqxp package.
 %package lib
 Summary: lib components for the libqxp package.
 Group: Libraries
-Requires: libqxp-license
+Requires: libqxp-license = %{version}-%{release}
 
 %description lib
 lib components for the libqxp package.
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534635104
+export SOURCE_DATE_EPOCH=1542500466
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -90,10 +90,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1534635104
+export SOURCE_DATE_EPOCH=1542500466
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/libqxp
-cp COPYING %{buildroot}/usr/share/doc/libqxp/COPYING
+mkdir -p %{buildroot}/usr/share/package-licenses/libqxp
+cp COPYING %{buildroot}/usr/share/package-licenses/libqxp/COPYING
 %make_install
 
 %files
@@ -124,5 +124,5 @@ cp COPYING %{buildroot}/usr/share/doc/libqxp/COPYING
 /usr/lib64/libqxp-0.0.so.0.0.1
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/libqxp/COPYING
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/libqxp/COPYING
