@@ -1,3 +1,70 @@
+2018-12-29  David Tardon  <dtardon@redhat.com>  [9c683db7e88292a97a72aadddb306be03ec2fea1]
+
+	prepare for a release
+
+	Change-Id: Iefc077ee7363d47ae4581c0fce984ab1f22ae0c0
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [f7cb4d73a0b06bce0077d09a60bfa77100ec9136]
+
+	check for __attribute__((visibility)) uncoditionally
+
+	Change-Id: Ie8f071ea2c4fc2c57278796bd74cfbc5c04306db
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [79f72108b7e8ab1cb5cd594f2dce16c2b09ae231]
+
+	fix conditional
+
+	Change-Id: I3c5d694eaabfe4a164e15e1eda0b43f165766dc5
+
+2018-12-29  David Tardon  <dtardon@redhat.com>  [bfe044df7edaf38ef950c6b4a20cf1b47752bbf1]
+
+	check for __attribute__((visibility)) too
+
+	Change-Id: I58d0b2dc32f1745d35f3e03b92de2c60231e55c5
+
+2018-03-12  David Tardon  <dtardon@redhat.com>  [6c9733fedff83af21b2218012e3c7c51ea3710d6]
+
+	speed up angle normalization
+
+	Change-Id: I87d1870729cbc29b080f43d749b6783be6f5bc8d
+
+2018-02-05  David Tardon  <dtardon@redhat.com>  [c58ac20f12be436795106eaa989c89b2c2af3228]
+
+	ofz#4934 avoid big allocation
+
+	Change-Id: I68a69d26c4cc74fa1ea1c249d16cec3108c1fcf4
+
+2018-02-05  David Tardon  <dtardon@redhat.com>  [125b94f7c102f9703bbe7b0dc6b131e1e2508041]
+
+	ofz#4769 avoid possible recursion when processing groups
+
+	Change-Id: I09acf1fbf5f25fa60c747cc49a95587644f20fc3
+
+2018-02-05  David Tardon  <dtardon@redhat.com>  [812c09bebc106d81cb638974714990d6a0cab064]
+
+	improve handling of groups that span facing pages
+
+	Only objects on the left page are grouped, but at least they are the
+	right objects, unlike before...
+
+2018-02-01  David Tardon  <dtardon@redhat.com>  [eccae4d2b89c4497a3f5e669f5479d08495e87c0]
+
+	WaE: unnecessary parentheses in declaration
+
+	Change-Id: I0ebf4c74a5f388ffc196dd2d67bb0949ed3218db
+
+2018-01-22  David Tardon  <dtardon@redhat.com>  [dedc897da3a394603dc383be66bb2be6d30f4052]
+
+	ofz#3440 avoid unnecessary exception
+
+	Change-Id: Ie5e2ed550832c7898173308bc162d629923f14bb
+
+2017-12-31  David Tardon  <dtardon@redhat.com>  [dde0ce7c8a763459cf89a77a73d1a9abac0cbaed]
+
+	bump version
+
+	Change-Id: Idb75d9f230e379173270b39eae6896c64a1f56b2
+
 2017-12-31  David Tardon  <dtardon@redhat.com>  [1381edd899cac68950dc0b8421cbcef889573de3]
 
 	cid#216093 improve error checking in chain parser

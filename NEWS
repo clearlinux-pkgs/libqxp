@@ -1,3 +1,8 @@
+libqxp-0.0.2
+
+- Improve handling of groups that span over facing pages.
+- Fix a couple of issues found by oss-fuzz.
+
 libqxp-0.0.1
 
 - Fix build with MSVC.
