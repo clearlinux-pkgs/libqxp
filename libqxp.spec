@@ -4,7 +4,7 @@
 #
 Name     : libqxp
 Version  : 0.0.2
-Release  : 3
+Release  : 4
 URL      : https://dev-www.libreoffice.org/src/libqxp-0.0.2.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libqxp-0.0.2.tar.xz
 Summary  : No summary provided
@@ -40,6 +40,7 @@ Group: Development
 Requires: libqxp-lib = %{version}-%{release}
 Requires: libqxp-bin = %{version}-%{release}
 Provides: libqxp-devel = %{version}-%{release}
+Requires: libqxp = %{version}-%{release}
 
 %description dev
 dev components for the libqxp package.
@@ -77,21 +78,25 @@ license components for the libqxp package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1553126368
-export LDFLAGS="${LDFLAGS} -fno-lto"
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1566839952
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1553126368
+export SOURCE_DATE_EPOCH=1566839952
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libqxp
 cp COPYING %{buildroot}/usr/share/package-licenses/libqxp/COPYING
