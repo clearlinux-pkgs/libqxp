@@ -4,7 +4,7 @@
 #
 Name     : libqxp
 Version  : 0.0.2
-Release  : 5
+Release  : 6
 URL      : https://dev-www.libreoffice.org/src/libqxp-0.0.2.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libqxp-0.0.2.tar.xz
 Summary  : No summary provided
@@ -73,17 +73,18 @@ license components for the libqxp package.
 
 %prep
 %setup -q -n libqxp-0.0.2
+cd %{_builddir}/libqxp-0.0.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566839952
+export SOURCE_DATE_EPOCH=1592624004
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 %configure --disable-static
 make  %{?_smp_mflags}
@@ -96,10 +97,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1566839952
+export SOURCE_DATE_EPOCH=1592624004
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libqxp
-cp COPYING %{buildroot}/usr/share/package-licenses/libqxp/COPYING
+cp %{_builddir}/libqxp-0.0.2/COPYING %{buildroot}/usr/share/package-licenses/libqxp/9744cedce099f727b327cd9913a1fdc58a7f5599
 %make_install
 
 %files
@@ -131,4 +132,4 @@ cp COPYING %{buildroot}/usr/share/package-licenses/libqxp/COPYING
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/libqxp/COPYING
+/usr/share/package-licenses/libqxp/9744cedce099f727b327cd9913a1fdc58a7f5599
