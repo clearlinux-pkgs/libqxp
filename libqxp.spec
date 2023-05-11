@@ -4,7 +4,7 @@
 #
 Name     : libqxp
 Version  : 0.0.2
-Release  : 8
+Release  : 9
 URL      : https://dev-www.libreoffice.org/src/libqxp-0.0.2.tar.xz
 Source0  : https://dev-www.libreoffice.org/src/libqxp-0.0.2.tar.xz
 Summary  : No summary provided
